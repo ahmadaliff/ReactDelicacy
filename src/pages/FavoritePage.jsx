@@ -10,7 +10,7 @@ const FavoritePage = () => {
     setFavoriteMeal(getFavorite());
   }, [refresh]);
   return (
-    <div className={`${Styles.homePageWrap} ${Styles.detailPage}`}>
+    <div className={`${Styles.homePageWrap} ${Styles.FavoritePage}`}>
       {console.log(favoriteMeal)}
       {favoriteMeal?.length > 0 ? (
         favoriteMeal?.map((val, key) => (

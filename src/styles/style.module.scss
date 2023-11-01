@@ -72,8 +72,23 @@
     .mainCardsWrap {
       @include displayFlex(row, center, center);
       padding: 0;
-      padding-top: 9rem;
       overflow-x: hidden;
+      padding-top: 9rem;
+    }
+  }
+  .homePageWrap.FavoritePage {
+    @include displayFlex(row, center, start);
+    padding-top: 9rem;
+    min-height: 100svh;
+    gap: 2rem;
+    flex-wrap: wrap;
+    p {
+      max-height: 1rem;
+      max-width: 10rem;
+      text-align: center;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
   }
   .homePageWrap {
@@ -200,6 +215,7 @@
     @include displayFlex;
     background-color: white;
     border-radius: 7.03px;
+    margin-top: 5rem;
   }
   .smallMealCardWrap {
     width: 142.44px;
