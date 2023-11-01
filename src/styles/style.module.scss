@@ -220,6 +220,7 @@
   .smallMealCardWrap {
     width: 142.44px;
     height: 130.57px;
+    padding: 0.25rem;
     .MealCard {
       width: 138.5px;
       height: 127.18px;
@@ -233,6 +234,7 @@
   .MealCardWrap {
     width: 221px;
     height: 172.28px;
+    padding: 0.25rem;
     position: relative;
     .MealCard {
       @include displayFlex(column);

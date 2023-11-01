@@ -4,7 +4,7 @@ const callAPI = async ({
   endpoint = "/all" /*default val*/,
   method = "GET",
   headers = {},
-  data = {},
+  data,
 }) => {
   const BASE_URL = import.meta.env.VITE_BASE_URL;
   const option = {
@@ -12,7 +12,7 @@ const callAPI = async ({
     method: method,
     url: endpoint,
     headers: headers,
-    data: data,
+    data,
   };
   const response = await axios(option);
   return response?.data;
